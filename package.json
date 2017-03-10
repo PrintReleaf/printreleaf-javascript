@@ -1,0 +1,27 @@
+{
+  "name": "printreleaf-javascript",
+  "version": "1.0.0",
+  "description": "A javascript sdk for the PrintReleaf API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrintReleaf/printreleaf-javascript.git"
+  },
+  "keywords": [
+    "PrintReleaf"
+  ],
+  "author": "PrintReleaf <info@printreleaf.com> (http://printreleaf.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrintReleaf/printreleaf-javascript/issues"
+  },
+  "homepage": "https://github.com/PrintReleaf/printreleaf-javascript#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "testdouble": "^1.11.2"
+  }
+}
