@@ -73,4 +73,16 @@ describe('Server', () => {
     });
   });
 
+  describe('#delete', () => {
+    it('yeilds the deleted source', () => {
+      const id = 'pants1234';
+      printreleaf.sources.delete(id);
+      expect(printreleaf.LAST_REQUEST).to.deep.equal({
+        method: 'DELETE',
+        url: '/sources/pants1234',
+        data: {}
+      });
+    });
+  });
+
 });
