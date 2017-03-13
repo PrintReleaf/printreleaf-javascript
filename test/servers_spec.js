@@ -49,25 +49,13 @@ describe('Servers', () => {
     });
   });    
 
-  describe('#activate', () => {
-    it('yeilds the activated server', () => {
-      const id = 'pants1234';
-      printreleaf.servers.activate(id);
-      expect(printreleaf.LAST_REQUEST).to.deep.equal({
-        method: 'POST',
-        url: '/servers/pants1234/activate',
-        data: {}
-      });
-    });
-  });
-  
-  describe('#deactivate', () => {
+  describe('#delete', () => {
     it('yeilds the deactivated server', () => {
       const id = 'pants1234';
-      printreleaf.servers.deactivate(id);
+      printreleaf.servers.delete(id);
       expect(printreleaf.LAST_REQUEST).to.deep.equal({
-        method: 'POST',
-        url: '/servers/pants1234/deactivate',
+        method: 'DELETE',
+        url: '/servers/pants1234',
         data: {}
       });
     });
