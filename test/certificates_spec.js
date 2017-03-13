@@ -2,6 +2,7 @@ const expect = require('chai').expect;
 const printreleaf = require('./testUtils').getSpyablePrintReleaf();
 
 describe('Certificates', () => {
+
   describe('#list', () => {
     it('yields a list of all certificates', () => {
       printreleaf.certificates.list({ page: 5 });
@@ -25,5 +26,4 @@ describe('Certificates', () => {
     });
   });
 
-  
 });
