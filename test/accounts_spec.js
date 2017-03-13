@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 const printreleaf = require('./testUtils').getSpyablePrintReleaf();
 
-describe('Account', () => {
+describe('Accounts', () => {
   describe('#list', () => {
     it('yields a list of all accounts', () => {
       printreleaf.accounts.list({ page: 5 });
