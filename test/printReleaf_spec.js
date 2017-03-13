@@ -2,12 +2,6 @@ const expect = require('chai').expect;
 const td = require('testdouble');
 const PrintReleaf = require('../lib/printReleaf')
 
-describe('A basic test', () => {
-  it('should pass when everythying is okay', () => {
-    expect(true).to.be.true;
-  })
-})
-
 describe('PrintReleaf', () => {
   describe('#new', () => {
     const apiKey = 'pants';
