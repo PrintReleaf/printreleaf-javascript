@@ -15,6 +15,10 @@ describe('PrintReleaf', () => {
       const expected = 'api.printreleaf.com/v1';
       expect(printreleaf.path).to.equal(expected);
     });
+
+    it('has an api', () => {
+      expect(printreleaf.request).to.exist;
+    });
   })
 
   describe('#get', () => {
