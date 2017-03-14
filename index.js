@@ -1,3 +1,3 @@
-exports.PrintReleaf = require('../lib/printReleaf');
+exports.PrintReleaf = require('./lib/printReleaf');
 
 
