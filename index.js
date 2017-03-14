@@ -1,3 +1,4 @@
-exports.PrintReleaf = require('./lib/printReleaf');
+'use strict';
+module.exports = require('./lib/printReleaf');
 
 
