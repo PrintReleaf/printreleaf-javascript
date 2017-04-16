@@ -1,6 +1,8 @@
 const expect = require('chai').expect;
 const td = require('testdouble');
 const Api = require('../lib/api')
+const PrintReleaf = require('../lib/printReleaf')
+
 
 describe('Api', () => {
   describe('Error handling', () => {
@@ -12,7 +14,7 @@ describe('Api', () => {
     });
 
     it('has a default path', () => {
-      const expected = 'api.printreleaf.com/v1';
+      const expected = 'api.staging.printreleaf.com/v1';
       expect(printreleaf.path).to.equal(expected);
     });
 
@@ -20,4 +22,4 @@ describe('Api', () => {
       expect(printreleaf.request).to.exist;
     });
   })
-
+})

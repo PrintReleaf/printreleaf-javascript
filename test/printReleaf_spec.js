@@ -12,7 +12,8 @@ describe('PrintReleaf', () => {
     });
 
     it('has a default path', () => {
-      const expected = 'api.printreleaf.com/v1';
+      // const expected = 'api.printreleaf.com/v1';
+      const expected = 'api.staging.printreleaf.com/v1';
       expect(printreleaf.path).to.equal(expected);
     });
 
