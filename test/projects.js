@@ -7,7 +7,7 @@ describe('Projects', () => {
       printreleaf.projects.list();
       expect(printreleaf.LAST_REQUEST).to.deep.equal({
         method: 'GET',
-        url: '/projects',
+        url: '/forestry/projects',
         data: {}
       });
     });
