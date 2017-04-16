@@ -1,6 +1,6 @@
 {
   "name": "printreleaf-javascript",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A javascript sdk for the PrintReleaf API.",
   "main": "index.js",
   "scripts": {
