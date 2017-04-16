@@ -135,7 +135,7 @@ deposit.paper_type_id; // "a11c7abc-011e-462f-babb-3c6375fa6473
 ### Creating a Deposit
 
 ```javascript
-const deposit = pr.deposits.create({pages: 16_666}); // returns a newly created deposit object 
+const deposit = pr.deposits.create({pages: 16666}); // returns a newly created deposit object 
 ```
 
 ### Deleting a Deposit
