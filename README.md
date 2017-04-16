@@ -99,7 +99,6 @@ const certificate = pr.certificates.find("ae630937-e15b-4da5-98de-bb68eefe2a12")
 
 certificate.id;         // "ae630937-e15b-4da5-98de-bb68eefe2a12"
 certificate.account_id; // "971d10ac-a912-42c0-aa41-f55adc7b6755"
-certificate.account;    // #<PrintReleaf::Account>
 certificate.date;       // "2017-02-28T23:59:59Z"
 certificate.pages;      // 2469134
 certificate.trees;      // 296.31
@@ -124,7 +123,6 @@ const deposit = pr.deposits.find("a86d591c-3c29-4bef-82c3-7a007fb6b19c"); // ret
 
 deposit.id;            // "a86d591c-3c29-4bef-82c3-7a007fb6b19c"
 deposit.account_id;    // "971d10ac-a912-42c0-aa41-f55adc7b6755"
-deposit.account;       // #<PrintReleaf::Account>
 deposit.source_id;     // "44e182ed-cd50-4fa1-af90-e77dd6d6a78c"
 deposit.source;        // #<PrintReleaf::Source>
 deposit.date;          // "2016-07-05T12:29:12Z"
@@ -164,7 +162,6 @@ const invitation = pr.invitations.find("26370b1e-15a5-4449-b3b1-622e99003d3f"); 
 
 invitation.id;         // "26370b1e-15a5-4449-b3b1-622e99003d3f"
 invitation.account_id; // "971d10ac-a912-42c0-aa41-f55adc7b6755"
-invitation.account;    // #<PrintReleaf::Account>
 invitation.email;      // "sally@example.com"
 invitation.created_at; // "2016-03-07T00:04:09Z
 ```
@@ -197,7 +194,6 @@ const server = pr.servers.find("eadabb78-b199-43cb-adbd-ab36ce5c5a10");
 
 server.id;         // "eadabb78-b199-43cb-adbd-ab36ce5c5a10"
 server.account_id; // "a2c031fa-6599-4939-8bc6-8128881953c4"
-server.account;    // #<PrintReleaf::Account>
 server.type;       // "fmaudit"
 server.url;        // "https://myfmauditserver.com"
 server.username;   // "MyFMAuditUsername"
@@ -245,7 +241,6 @@ const source = pr.sources.find("44e182ed-cd50-4fa1-af90-e77dd6d6a78c"); // retur
 
 source.id;                      // "44e182ed-cd50-4fa1-af90-e77dd6d6a78c"
 source.account_id;              // "971d10ac-a912-42c0-aa41-f55adc7b6755"
-source.account;                 // #<PrintReleaf::Account>
 source.type;                    // "fmaudit"
 source.server_id;               // "eadabb78-b199-43cb-adbd-ab36ce5c5a10"
 source.server;                  // #<PrintReleaf::Server>
@@ -312,7 +307,6 @@ const transaction = pr.transactions.find("70af5540-e3ec-4db7-bc45-4fb65b74368b")
 
 transaction.id;             // "70af5540-e3ec-4db7-bc45-4fb65b74368b"
 transaction.account_id;     // "971d10ac-a912-42c0-aa41-f55adc7b6755"
-transaction.account;        // #<PrintReleaf::Account>
 transaction.project_id;     // "692bb68d-64aa-4a79-8a08-d373fb0d8752"
 transaction.account;        // #<PrintReleaf::Forestry::Project>
 transaction.certificate_id; // "70af5540-e3ec-4db7-bc45-4fb65b74368b"
@@ -369,7 +363,6 @@ const user = pr.users.find("5f25569f-ec0d-4ff3-a6ce-0456ac79b84d");
 
 user.id;         // "5f25569f-ec0d-4ff3-a6ce-0456ac79b84d"
 user.account_id; // "971d10ac-a912-42c0-aa41-f55adc7b6755"
-user.account;    // #<PrintReleaf::Account>
 user.name;       // "Sally Example"
 user.email;      // "sally@example.com"
 user.created_at; // "2015-03-07T00:04:09Z
@@ -391,7 +384,6 @@ const volumes = pr.volumes.list(); // returns an array of volume objects
 
 const volume = volumes[0]; 
 volume.account_id; // "971d10ac-a912-42c0-aa41-f55adc7b6755"
-volume.account;    // #<PrintReleaf::VolumePeriod>
 volume.date;       // "2017-01-01T07:00:00Z"
 volume.pages;      // 234567
 volume.trees;      // 56.3
@@ -446,7 +438,6 @@ const paperTypes = pr.paperTypes.list(); // retruns an array of paper typer obje
 const paperType = pr.paperTypes.find("a11c7abc-011e-462f-babb-3c6375fa6473"); // returns paper type with given id 
 paper_type.id;         // "a11c7abc-011e-462f-babb-3c6375fa6473"
 paper_type.account_id; // "a2c031fa-6599-4939-8bc6-8128881953c4"
-paper_type.account;    // #<PrintReleaf::Account>
 paper_type.name;       // "80# #2 Gloss Cover"
 paper_type.density;    // 216.0
 ```
